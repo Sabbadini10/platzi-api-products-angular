@@ -1,19 +1,28 @@
-<mat-card class="bg-warning example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
+<!--  <div class="card my-5 card-container"  *ngFor="let producto of productos">
+  <div class="card-header bg-primary">
+    <h5 class="card-header-text text-dark text-center">{{producto.title}}</h5>
+  </div>
+
+      <div>
+        <div>
+          <img class="card-imagen" [src]="producto.image" alt="Imagen">
+        </div>
+      </div>
+      <div class="card-footer text-dark">
+       <p>{{producto.price}}</p>
+      </div>
+    </div>
+ -->
+
+
+  <div class="card" *ngFor="let producto of productos">
+    <div class="img">
+      <img class="card-imagen" [src]="producto.image" alt="Imagen">
+    </div>
+    <div class="card-header">
+      <h5 class="card-header-text text-light text-center my-2">{{producto.title}}</h5>
+    </div>
+<div class="card-header-parrafo">
+  <p class="text-light my-2 text-center">${{producto.price}}</p>
+</div>
+  </div>

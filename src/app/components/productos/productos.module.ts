@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import { ProductosRoutingModule } from './productos-routing.module';
+
+import { HttpClientModule } from '@angular/common/http';
 import { ProductosComponent } from './productos.component';
 
 
@@ -12,7 +14,8 @@ import { ProductosComponent } from './productos.component';
   imports: [
     CommonModule,
     ProductosRoutingModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   exports: [
     ProductosComponent
