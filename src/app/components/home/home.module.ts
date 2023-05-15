@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { ProductosModule } from '../productos/productos.module';
 import { OfertasModule } from '../ofertas/ofertas.module';
 import { MetodosPagosModule } from '../metodos-pagos/metodos-pagos.module';
+import { SliderModule } from '../slider/slider.module';
 
 
 @NgModule({
@@ -17,12 +18,14 @@ import { MetodosPagosModule } from '../metodos-pagos/metodos-pagos.module';
     HomeRoutingModule,
     ProductosModule,
     OfertasModule,
-    MetodosPagosModule
+    MetodosPagosModule,
+    SliderModule
   ],
   exports: [
     ProductosModule,
     OfertasModule,
-    MetodosPagosModule
+    MetodosPagosModule,
+    SliderModule
   ]
 })
 export class HomeModule { }
