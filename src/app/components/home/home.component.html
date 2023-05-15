@@ -1,27 +1,39 @@
 <div class="home-banner-container">
   <img class="home-banner-container--image" src="../../../assets/Banner.png"/>
 </div>
-<div>
-  <h2 class="home-subtitulo text-center my-5">Productos Destacados</h2>
+<div class="my-3">
+  <h2 class="home-subtitulo text-center">Productos Destacados</h2>
 </div>
-<div>
+<div class="my-3">
   <app-productos class="d-flex flex-row gap-3 flex-wrap my-5 justify-content-center"></app-productos>
-  <div>
-    <button>
-      <a href="#">Ver mas</a>
-    </button>
+  <div class="d-flex justify-content-center">
+    <button class="home-button-vermas">
+      <p class="home-button-parrafo">Ver mas</p>
+      <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+      </svg>
+  </button>
   </div>
 </div>
-<div>
-  <h2 class="home-subtitulo text-center my-5">Ofertas</h2>
+<div class="my-3">
+  <h2 class="home-subtitulo text-center mt-5">Ofertas</h2>
 </div>
-<div>
+<div class="my-3">
   <app-ofertas class="d-flex flex-row gap-3 flex-wrap my-5 justify-content-center"></app-ofertas>
-  <div>
-    <button>
-      <a href="#">Ver mas</a>
-    </button>
+  <div class="d-flex justify-content-center">
+    <button class="home-button-vermas">
+      <p class="home-button-parrafo">Ver mas</p>
+      <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+      </svg>
+  </button>
   </div>
+</div>
+<div class="my-3">
+  <h2 class="home-subtitulo text-center mt-5">Metodos de pagos</h2>
+</div>
+<div>
+  <app-metodos-pagos></app-metodos-pagos>
 </div>
 
 

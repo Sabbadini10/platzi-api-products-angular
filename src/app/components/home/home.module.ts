@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { ProductosModule } from '../productos/productos.module';
 import { OfertasModule } from '../ofertas/ofertas.module';
+import { MetodosPagosModule } from '../metodos-pagos/metodos-pagos.module';
 
 
 @NgModule({
@@ -15,11 +16,13 @@ import { OfertasModule } from '../ofertas/ofertas.module';
     CommonModule,
     HomeRoutingModule,
     ProductosModule,
-    OfertasModule
+    OfertasModule,
+    MetodosPagosModule
   ],
   exports: [
     ProductosModule,
-    OfertasModule
+    OfertasModule,
+    MetodosPagosModule
   ]
 })
 export class HomeModule { }

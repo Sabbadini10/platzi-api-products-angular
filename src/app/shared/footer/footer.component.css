@@ -5,4 +5,5 @@
 
 .footer-content{
   color: aliceblue;
+  font-family: var(--tipografiaParrafos);
 }

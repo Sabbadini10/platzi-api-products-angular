@@ -1,0 +1,9 @@
+.metodosPagos-image{
+  width: 70px;
+  height:70px;
+}
+
+.metodosPagos-parrafo{
+  font-family: var(--tipografiaParrafos);
+  font-size: 30px;
+}

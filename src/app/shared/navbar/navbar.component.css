@@ -1,4 +1,27 @@
+.navbar{
+  height: 100px;
+}
 .example-spacer {
   flex: 1 1 auto;
 }
 
+.navbar-logo{
+  width: 90px;
+  height: 90px;
+}
+
+.nav-link {
+  font-family: var(--tipografiaParrafos);
+}
+
+.dropdown-item{
+  font-family: var(--tipografiaParrafos);
+}
+
+.btn{
+  font-family: var(--tipografiaParrafos);
+}
+
+.form-control::placeholder{
+  font-family: var(--tipografiaParrafos);
+}

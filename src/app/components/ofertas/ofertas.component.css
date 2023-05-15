@@ -33,3 +33,12 @@
   justify-content: center;
 }
 
+.card-header-text{
+  font-family: var(--tipografiaParrafos);
+  font-size: 20px;
+}
+
+.card-header-parrafo--p{
+  font-family: var(--tipografiaParrafos);
+  font-size: 20px;
+}
