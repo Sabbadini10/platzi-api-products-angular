@@ -1,40 +1,16 @@
-<!--  <div class="card my-5 card-container"  *ngFor="let producto of productos">
-  <div class="card-header bg-primary">
-    <h5 class="card-header-text text-dark text-center">{{producto.title}}</h5>
-  </div>
-
-      <div>
-        <div>
-          <img class="card-imagen" [src]="producto.image" alt="Imagen">
-        </div>
-      </div>
-      <div class="card-footer text-dark">
-       <p>{{producto.price}}</p>
-      </div>
-    </div>
- -->
-
-
- <!--  <div class="card" *ngFor="let producto of productos">
-    <div class="img">
-      <img class="card-imagen" [src]="producto.image" alt="Imagen">
-    </div>
-    <div class="card-header">
-      <h5 class="card-header-text text-light text-center my-2">{{producto.title}}</h5>
-    </div>
-<div class="card-header-parrafo">
-  <p class="card-header-parrafo--p text-light my-2 text-center">${{producto.price}}</p>
-</div>
-  </div> -->
-
   <div class="productos-card" *ngFor="let producto of productos">
-    <div class="productos-card-contaner-image">
-      <img class="productos-card-imagen" [src]="producto.image" alt="Imagen">
-    </div>
-    <div class="productos-card-title">
-      <span class="title">{{producto.title}}</span>
-    </div>
-<div class="productos-card-price">
-  <span class="price mb-1">${{producto.price}}</span>
+  <div class="productos-card-img">
+    <img class="productos-card-imagen" [src]="producto.image" alt="Imagen">
+  </div>
+  <div class="productos-card-info">
+    <span class="productos-text-title">{{producto.title}}</span>
+  </div>
+  <div class="productos-card-footer">
+  <span class="productos-text-title">${{producto.price}}</span>
+  <div class="productos-card-container-button">
+    <button class="productos-card-button">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+  </div>
 </div>
-    </div>
+</div>

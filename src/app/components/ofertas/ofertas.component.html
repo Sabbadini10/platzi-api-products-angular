@@ -1,11 +1,16 @@
-<div class="ofertas-card" *ngFor="let producto of ofertas">
-  <div class="ofertas-card-contaner-image">
-    <img class="ofertas-card-imagen" [src]="producto.image" alt="Imagen">
+  <div class="ofertas-card" *ngFor="let ofertas of ofertas">
+    <div class="ofertas-card-img">
+      <img class="ofertas-card-imagen" [src]="ofertas.image" alt="Imagen">
+    </div>
+    <div class="ofertas-card-info">
+      <span class="ofertas-text-title">{{ofertas.title}}</span>
+    </div>
+    <div class="ofertas-card-footer">
+    <span class="ofertas-text-title">${{ofertas.price}}</span>
+    <div class="ofertas-card-container-button">
+      <button class="ofertas-card-button">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
   </div>
-  <div class="ofertas-card-title">
-    <span class="title">{{producto.title}}</span>
-  </div>
-<div class="ofertas-card-price">
-<span class="price mb-1">${{producto.price}}</span>
-</div>
   </div>
