@@ -15,7 +15,7 @@
  -->
 
 
-  <div class="card" *ngFor="let producto of productos">
+ <!--  <div class="card" *ngFor="let producto of productos">
     <div class="img">
       <img class="card-imagen" [src]="producto.image" alt="Imagen">
     </div>
@@ -25,4 +25,16 @@
 <div class="card-header-parrafo">
   <p class="card-header-parrafo--p text-light my-2 text-center">${{producto.price}}</p>
 </div>
-  </div>
+  </div> -->
+
+  <div class="productos-card" *ngFor="let producto of productos">
+    <div class="productos-card-contaner-image">
+      <img class="productos-card-imagen" [src]="producto.image" alt="Imagen">
+    </div>
+    <div class="productos-card-title">
+      <span class="title">{{producto.title}}</span>
+    </div>
+<div class="productos-card-price">
+  <span class="price mb-1">${{producto.price}}</span>
+</div>
+    </div>

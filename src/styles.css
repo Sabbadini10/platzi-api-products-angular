@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 :root{
-  --tipografiaTitulos: 'Alkatra', cursive;
-  --tipografiaParrafos: 'Sriracha', cursive;;
+  --tipografiaTitulos: 'Bebas Neue', sans-serif;
+  --tipografiaParrafos: 'Oxygen', sans-serif;
 
 }
 

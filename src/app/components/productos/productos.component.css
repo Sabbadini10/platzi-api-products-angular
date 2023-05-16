@@ -1,45 +1,100 @@
-.card {
+.productos-card {
+  position: relative;
   width: 300px;
-  height: 420px;
-  background: #171717;
-  transition: 1s ease-in-out;
-  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  height: 450px;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-}
-
-
-.card-imagen {
-  width: 100%;
-  height: 250px;
-  background: white;
-  border-radius: 15px;
-  margin: auto;
-}
-
-.card-header{
-  width: 100%;
-  height: 200px;
-}
-
-.card-header-parrafo{
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  border-radius: 15px;
+  border: 2px solid #4B4453;
 }
 
-.card-header-text{
-  font-family: var(--tipografiaParrafos);
-  font-size: 20px;
+.productos-card::after {
+  content: "Agregar al carrito";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 106px;
+  width: 100%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  border-radius: 15px;
 }
 
-.card-header-parrafo--p{
-  font-family: var(--tipografiaParrafos);
-  font-size: 20px;
+.productos-card .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:  var(--tipografiaParrafos);
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 700;
+  color: #4B4453;
 }
+
+.productos-card .price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family:  var(--tipografiaParrafos);
+  font-size: 0.9em;
+  font-weight: 700;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0px;
+  color: #4B4453;
+}
+
+.title{
+  width: 100%;
+  height: 100px;
+}
+
+.price{
+  width: 100%;
+  height: 40px;
+}
+
+.productos-card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.productos-card:active {
+  transform: scale(0.98);
+}
+
+.productos-card:active::after {
+  content: "Agregado!";
+  height: 106px;
+}
+
+
+.productos-card-imagen {
+  width:280px;
+  height: 280px;
+  border-radius: 15px;
+}
+
+.productos-card-contaner-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

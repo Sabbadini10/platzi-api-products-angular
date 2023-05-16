@@ -1,11 +1,11 @@
-<div class="card" *ngFor="let oferta of ofertas">
-  <div class="img">
-    <img class="card-imagen" [src]="oferta.image" alt="Imagen">
+<div class="ofertas-card" *ngFor="let producto of ofertas">
+  <div class="ofertas-card-contaner-image">
+    <img class="ofertas-card-imagen" [src]="producto.image" alt="Imagen">
   </div>
-  <div class="card-header">
-    <h5 class="card-header-text text-light text-center my-2">{{oferta.title}}</h5>
+  <div class="ofertas-card-title">
+    <span class="title">{{producto.title}}</span>
   </div>
-<div class="card-header-parrafo">
-<p class="card-header-parrafo--p text-light my-2 text-center">${{oferta.price}}</p>
+<div class="ofertas-card-price">
+<span class="price mb-1">${{producto.price}}</span>
 </div>
-</div>
+  </div>
