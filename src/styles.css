@@ -5,6 +5,9 @@
 :root{
   --tipografiaTitulos: 'Bebas Neue', sans-serif;
   --tipografiaParrafos: 'Oxygen', sans-serif;
+  --colorDark: #1E293B;
+  --colorLight: #D6DEE7;
+  --colorMid: #B8BFC6;
 
 }
 
@@ -14,3 +17,6 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+.navbar-expand-lg .navbar-collapse {
+  background-color: var(--colorDark) !important;
+}

@@ -5,5 +5,6 @@
 
 .metodosPagos-parrafo{
   font-family: var(--tipografiaParrafos);
+  color:var(--colorDark);
   font-size: 30px;
 }

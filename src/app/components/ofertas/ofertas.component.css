@@ -22,7 +22,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  border-top: 1px solid #ddd;
  }
  
  /*Text*/
@@ -40,7 +39,7 @@
  }
 
  .ofertas-card-button{
-  border: 1px solid #000;
+  border: 1px solid var(--colorDark);
   transition: .3s ease-in-out;
   border-radius: 50%;
  }
@@ -48,8 +47,8 @@
 
 
  .ofertas-card-button:hover{
-  border: 1px solid #ffcaa6;
-  color: #ffcaa6;
+  border: 1px solid var(--colorMid);
+  color: var(--colorMid);
   border-radius: 50%;
  }
 

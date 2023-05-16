@@ -1,5 +1,7 @@
+
 .navbar{
   height: 100px;
+  background-color: var(--colorDark) !important;
 }
 .example-spacer {
   flex: 1 1 auto;
@@ -12,16 +14,21 @@
 
 .nav-link {
   font-family: var(--tipografiaParrafos);
+  color:var(--colorLight);
 }
 
 .dropdown-item{
   font-family: var(--tipografiaParrafos);
+  color:var(--colorLight);
 }
 
 .btn{
   font-family: var(--tipografiaParrafos);
+  color:var(--colorLight);
+  background-color: var(--colorMid);
 }
 
 .form-control::placeholder{
   font-family: var(--tipografiaParrafos);
+  color:var(--colorDark);
 }

@@ -1,9 +1,12 @@
+.footer-dark{
+background-color: var(--colorDark) !important;
+}
 .footer-container {
  display: flex;
  justify-content: center;
 }
 
 .footer-content{
-  color: aliceblue;
+  color:var(--colorLight);
   font-family: var(--tipografiaParrafos);
 }
